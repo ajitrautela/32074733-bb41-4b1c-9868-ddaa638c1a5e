@@ -32,14 +32,14 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ${{ env.Solution_Name }}
       
     - name: Build
-      run: dotnet build --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --no-restore
       
     # Execute all unit tests in the solution
     - name: Execute tests with code coverage
-      run: dotnet test --configuration ${{ matrix.configuration }} --no-build --collect:"XPlat Code Coverage" --results-directory ./CodeCoverage --verbosity detailed
+      run: dotnet test ${{ env.Test_Project_Path }} --configuration ${{ matrix.configuration }} --no-build --collect:"XPlat Code Coverage" --results-directory ./CodeCoverage --verbosity detailed
 
     - name: Upload coverage results
       uses: actions/upload-artifact@v4
