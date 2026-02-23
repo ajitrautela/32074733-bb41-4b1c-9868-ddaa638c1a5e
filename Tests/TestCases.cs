@@ -1,4 +1,5 @@
-﻿using SequenceGenerator;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SequenceGenerator;
 
 namespace Tests
 {
