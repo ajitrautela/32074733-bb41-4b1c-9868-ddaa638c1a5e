@@ -2,9 +2,29 @@
 {
     public class SequenceGeneratorService
     {
-        public int[] GenerateLongestSequence(int[] inputNumbers)
+        public int[] GenerateLongestSubSequence(int[] inputNumbers)
         {
-            return null;
+            int[] longestSubSequence = Array.Empty<int>();
+            List<int> subSequence = new List<int>();
+
+            for (int i = 0; i < inputNumbers.Length - 1; i++)
+            {
+                if (inputNumbers[i] < inputNumbers[i + 1])
+                {
+                    subSequence.Add(inputNumbers[i]);
+                }
+                else
+                {
+                    subSequence.Add(inputNumbers[i]);
+                    if (subSequence.Count > longestSubSequence.Length)
+                    {
+                        longestSubSequence = subSequence.ToArray();
+                    }
+                    subSequence.Clear();
+                }
+            }
+
+            return longestSubSequence;
         }
     }
 }

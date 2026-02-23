@@ -26,6 +26,6 @@ catch (FormatException)
 }
 
 var sequenceGeneratorService = new SequenceGeneratorService.SequenceGeneratorService();
-var longestSequence = sequenceGeneratorService.GenerateLongestSequence(inputNumbers);
+var longestSequence = sequenceGeneratorService.GenerateLongestSubSequence(inputNumbers);
 
 Console.WriteLine(string.Join(" ", longestSequence));
