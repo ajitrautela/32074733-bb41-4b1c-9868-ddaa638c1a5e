@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="SequenceGenerator/SequenceGenerator.csproj" />
-  <Project Path="SequenceGeneratorService/SequenceGeneratorService.csproj" />
-  <Project Path="Tests/Tests.csproj" Id="d9edb50a-7c76-4479-b4bb-f51f61aa967e" />
-</Solution>

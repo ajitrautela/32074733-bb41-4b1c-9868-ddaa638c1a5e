@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11430.68 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequenceGenerator", "SequenceGenerator\SequenceGenerator.csproj", "{6B823F9D-0CFD-811B-E63F-72568B0296A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequenceGeneratorService", "SequenceGeneratorService\SequenceGeneratorService.csproj", "{21BE3FB9-1BF7-191D-67AE-37C97A7D8D68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{D9EDB50A-7C76-4479-B4BB-F51F61AA967E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B823F9D-0CFD-811B-E63F-72568B0296A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B823F9D-0CFD-811B-E63F-72568B0296A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B823F9D-0CFD-811B-E63F-72568B0296A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B823F9D-0CFD-811B-E63F-72568B0296A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BE3FB9-1BF7-191D-67AE-37C97A7D8D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BE3FB9-1BF7-191D-67AE-37C97A7D8D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BE3FB9-1BF7-191D-67AE-37C97A7D8D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BE3FB9-1BF7-191D-67AE-37C97A7D8D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EDB50A-7C76-4479-B4BB-F51F61AA967E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EDB50A-7C76-4479-B4BB-F51F61AA967E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EDB50A-7C76-4479-B4BB-F51F61AA967E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EDB50A-7C76-4479-B4BB-F51F61AA967E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
