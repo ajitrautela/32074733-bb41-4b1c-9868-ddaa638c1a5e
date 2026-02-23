@@ -1,11 +1,11 @@
-﻿namespace SequenceGenerator
+namespace SequenceGenerator
 {
     public class SequenceGeneratorService : ISequenceGeneratorService
     {
         public string ProcessInput(string inputString)
         {
-            string[] inputStrings = Array.Empty<string>();
-            int[] inputNumbers = Array.Empty<int>();
+            string[] inputStrings = [];
+            int[] inputNumbers = [];
 
             inputStrings = inputString.Split(' ', StringSplitOptions.TrimEntries);
 
@@ -18,15 +18,15 @@
                 return "Invalid numbers entered";
             }
 
-            var longestSequence = GenerateLongestSubSequence(inputNumbers);
+            int[] longestSequence = GenerateLongestSubSequence(inputNumbers);
 
-            return(string.Join(" ", longestSequence));
+            return string.Join(" ", longestSequence);
         }
 
         private int[] GenerateLongestSubSequence(int[] inputNumbers)
         {
-            int[] longestSubSequence = Array.Empty<int>();
-            List<int> subSequence = new List<int>();
+            int[] longestSubSequence = [];
+            List<int> subSequence = [];
 
             for (int i = 0; i < inputNumbers.Length - 1; i++)
             {

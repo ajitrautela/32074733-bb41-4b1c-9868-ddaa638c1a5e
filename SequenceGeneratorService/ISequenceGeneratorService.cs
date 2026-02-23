@@ -1,7 +1,7 @@
-﻿namespace SequenceGenerator
+namespace SequenceGenerator
 {
     public interface ISequenceGeneratorService
     {
-        public string ProcessInput(string inputString);
+        string ProcessInput(string inputString);
     }
 }

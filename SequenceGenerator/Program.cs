@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using SequenceGenerator;
 
 //DI setup
@@ -10,7 +10,7 @@ Console.WriteLine("-Longest sequence generator-");
 
 Console.WriteLine("Enter numbers separated by a single whitespace");
 
-var input = Console.ReadLine();
+string? input = Console.ReadLine();
 
 if (string.IsNullOrEmpty(input))
 {
@@ -19,6 +19,6 @@ if (string.IsNullOrEmpty(input))
 }
 
 var service = serviceProvider.GetService<ISequenceGeneratorService>();
-var output = service?.ProcessInput(input);
+string? output = service?.ProcessInput(input);
 
 Console.WriteLine(output);
