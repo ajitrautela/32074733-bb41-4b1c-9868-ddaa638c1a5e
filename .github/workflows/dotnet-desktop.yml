@@ -46,5 +46,5 @@ jobs:
       uses: microsoft/vstest-action@v1.0.0
       with:
         testAssembly: Tests.dll
-        searchFolder: .\Tests\bin\Debug\
+        searchFolder: .\Tests\bin\Debug\**\
 
