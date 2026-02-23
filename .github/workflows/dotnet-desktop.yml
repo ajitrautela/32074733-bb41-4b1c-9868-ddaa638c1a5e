@@ -42,9 +42,6 @@ jobs:
       run: dotnet build --no-restore
       
     # Execute all unit tests in the solution
-    - name: Execute vstests
-      uses: microsoft/vstest-action@v1.1.0
-      with:
-        testAssembly: Tests.dll
-        searchFolder: .\Tests\bin\Debug\**\
+    - name: Execute tests
+      run: dotnet test --no-build --verbosity normal
 
