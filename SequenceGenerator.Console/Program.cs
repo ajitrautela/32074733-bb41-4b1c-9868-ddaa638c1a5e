@@ -1,8 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
-using SequenceGenerator;
+using SequenceGenerator.Service;
 
 //DI setup
-var serviceProvider = new ServiceCollection()
+ServiceProvider serviceProvider = new ServiceCollection()
             .AddSingleton<ISequenceGeneratorService, SequenceGeneratorService>()
             .BuildServiceProvider();
 
@@ -18,7 +18,7 @@ if (string.IsNullOrEmpty(input))
     return;
 }
 
-var service = serviceProvider.GetService<ISequenceGeneratorService>();
+ISequenceGeneratorService? service = serviceProvider.GetService<ISequenceGeneratorService>();
 string? output = service?.ProcessInput(input);
 
 Console.WriteLine(output);

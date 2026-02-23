@@ -1,4 +1,4 @@
-namespace SequenceGenerator
+namespace SequenceGenerator.Service
 {
     public class SequenceGeneratorService : ISequenceGeneratorService
     {
@@ -23,7 +23,7 @@ namespace SequenceGenerator
             return string.Join(" ", longestSequence);
         }
 
-        private int[] GenerateLongestSubSequence(int[] inputNumbers)
+        private static int[] GenerateLongestSubSequence(int[] inputNumbers)
         {
             int[] longestSubSequence = [];
             List<int> subSequence = [];
@@ -49,7 +49,7 @@ namespace SequenceGenerator
             return longestSubSequence;
         }
 
-        private void SetLongestSubSequence(ref int[] longestSubSequence, List<int> subSequence)
+        private static void SetLongestSubSequence(ref int[] longestSubSequence, List<int> subSequence)
         {
             if (subSequence.Count > longestSubSequence.Length)
             {

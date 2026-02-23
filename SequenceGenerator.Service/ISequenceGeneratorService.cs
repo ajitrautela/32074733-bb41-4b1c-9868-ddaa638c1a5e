@@ -1,4 +1,4 @@
-namespace SequenceGenerator
+namespace SequenceGenerator.Service
 {
     public interface ISequenceGeneratorService
     {

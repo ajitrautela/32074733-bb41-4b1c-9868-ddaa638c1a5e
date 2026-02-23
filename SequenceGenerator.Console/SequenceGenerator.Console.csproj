@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SequenceGeneratorService\SequenceGeneratorService.csproj" />
+    <ProjectReference Include="..\SequenceGenerator.Service\SequenceGenerator.Service.csproj" />
   </ItemGroup>
 
 </Project>

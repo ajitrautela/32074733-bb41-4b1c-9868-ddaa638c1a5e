@@ -1,7 +1,6 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SequenceGenerator;
+using SequenceGenerator.Service;
 
-namespace Tests
+namespace SequenceGenerator.Tests
 {
     [TestClass]
     public class LongestSubSequenceTests
