@@ -39,7 +39,7 @@ jobs:
       
     # Execute all unit tests in the solution
     - name: Execute tests with code coverage
-      run: dotnet test --collect:"XPlat Code Coverage" --results-directory ./CodeCoverage
+      run: dotnet test --collect:"XPlat Code Coverage" --results-directory ./CodeCoverage --verbosity detailed
 
     - name: Upload coverage results
       uses: actions/upload-artifact@v4
