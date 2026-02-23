@@ -33,7 +33,10 @@ jobs:
 
     - name: Restore dependencies
       run: dotnet restore ${{ env.Solution_Name }}
-      
+
+    - name: Run dotnet format (check only)
+      run: dotnet format --verify-no-changes --severity warn
+
     - name: Build
       run: dotnet build ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --no-restore
       
