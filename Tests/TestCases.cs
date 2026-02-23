@@ -1,11 +1,11 @@
-﻿using SequenceGeneratorService;
+﻿using SequenceGenerator;
 
 namespace Tests
 {
     [TestClass]
     public class LongestSubSequenceTests
     {
-        ISequenceGeneratorService _service;
+        private readonly ISequenceGeneratorService _service;
         public LongestSubSequenceTests(ISequenceGeneratorService service)
         {
             _service = service;
