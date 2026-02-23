@@ -153,5 +153,18 @@ namespace Tests
             // Assert
             Assert.AreEqual("1 5 9", output);
         }
+
+        [TestMethod]
+        public void TestMethod12()
+        {
+            // Arrange
+            string input = "B 2 4 3 1 5 9";
+
+            // Act
+            var output = _service.ProcessInput(input);
+
+            // Assert
+            Assert.AreEqual("Invalid numbers entered", output);
+        }
     }
 }
