@@ -2,6 +2,27 @@
 {
     public class SequenceGeneratorService
     {
+        public string ProcessInput(string inputString)
+        {
+            string[] inputStrings = Array.Empty<string>();
+            int[] inputNumbers = Array.Empty<int>();
+
+            inputStrings = inputString.Split(' ', StringSplitOptions.TrimEntries);
+
+            try
+            {
+                inputNumbers = Array.ConvertAll(inputStrings, int.Parse);
+            }
+            catch (FormatException)
+            {
+                return "Invalid numbers entered";
+            }
+
+            var longestSequence = GenerateLongestSubSequence(inputNumbers);
+
+            return(string.Join(" ", longestSequence));
+        }
+
         public int[] GenerateLongestSubSequence(int[] inputNumbers)
         {
             int[] longestSubSequence = Array.Empty<int>();
