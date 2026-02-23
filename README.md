@@ -7,7 +7,9 @@ The solution implements following projects
 - Tests project
 
 The solution also demonstrates the use of following tech
+- Clean code
 - Dependency Injection
+- Unit tests
 - Containers - Docker windows image
 - CI/CD using GitHub Actions to configure workflow to build and execute tests to output code coverage report
 - YAML file configures the test execution (no deployment)
@@ -16,3 +18,4 @@ The solution also demonstrates the use of following tech
 The test results can be verified in following ways 
 - GitHub Actions workflow
 - Running tests by opening solution in Visual Studio
+- Running console application to input a string of numbers
