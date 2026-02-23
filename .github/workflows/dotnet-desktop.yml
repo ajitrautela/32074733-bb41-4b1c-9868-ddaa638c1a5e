@@ -43,7 +43,7 @@ jobs:
       
     # Execute all unit tests in the solution
     - name: Execute vstests
-      uses: microsoft/vstest-action@v1.0.0
+      uses: microsoft/vstest-action@v1
       with:
         testAssembly: Tests.dll
         searchFolder: .\Tests\bin\Debug\**\
