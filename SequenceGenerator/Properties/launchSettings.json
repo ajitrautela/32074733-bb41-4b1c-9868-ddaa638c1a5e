@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SequenceGenerator": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
