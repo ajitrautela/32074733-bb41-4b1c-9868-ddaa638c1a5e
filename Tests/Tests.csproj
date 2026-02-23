@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Moq" Version="4.20.72" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SequenceGeneratorService\SequenceGeneratorService.csproj" />
   </ItemGroup>
 

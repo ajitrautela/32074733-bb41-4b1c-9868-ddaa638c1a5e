@@ -1,5 +1,4 @@
 ﻿using SequenceGeneratorService;
-using Moq;
 
 namespace Tests
 {
