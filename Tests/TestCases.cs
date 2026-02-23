@@ -5,10 +5,10 @@ namespace Tests
     [TestClass]
     public class LongestSubSequenceTests
     {
-        private readonly ISequenceGeneratorService _service;
-        public LongestSubSequenceTests(ISequenceGeneratorService service)
+        private ISequenceGeneratorService _service;
+        public LongestSubSequenceTests()
         {
-            _service = service;
+            _service = new SequenceGeneratorService();
         }
 
         [TestMethod]
