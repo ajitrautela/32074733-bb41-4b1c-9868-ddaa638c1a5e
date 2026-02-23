@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="SequenceGenerator/SequenceGenerator.csproj" />
   <Project Path="SequenceGeneratorService/SequenceGeneratorService.csproj" />
+  <Project Path="Tests/Tests.csproj" />
 </Solution>
